@@ -1,0 +1,92 @@
+﻿import {
+  Clock3,
+  Database,
+  FileText,
+  Home,
+  Newspaper,
+  Settings,
+  ShieldCheck,
+  User,
+  UserCog,
+  UserRound,
+  WalletCards,
+} from "lucide-react";
+export const navItems = [
+  { id: "home", label: "Trang chủ", shortLabel: "Trang chủ", icon: Home, permission: "view_home" },
+  {
+    id: "attendance",
+    label: "Chấm công",
+    shortLabel: "Chấm công",
+    icon: Clock3,
+    permission: "view_attendance",
+  },
+  {
+    id: "payroll",
+    label: "Phiếu lương",
+    shortLabel: "Lương",
+    icon: WalletCards,
+    permission: "view_salary",
+  },
+  { id: "requests", label: "Văn bản", shortLabel: "Văn bản", icon: FileText, permission: "view_document" },
+  {
+    id: "news",
+    label: "Thông báo & Tin tức",
+    shortLabel: "Tin tức",
+    icon: Newspaper,
+    permission: "view_news",
+  },
+  { id: "profile", label: "Cá nhân", shortLabel: "Cá nhân", icon: UserRound },
+];
+export const adminNavItems = [
+  { id: "adminhr", label: "Admin-HR", shortLabel: "Admin-HR", icon: UserCog, permission: "view_hr_data" },
+  {
+    id: "hrdata",
+    label: "Dữ liệu công",
+    shortLabel: "Dữ liệu HR",
+    icon: Database,
+    permission: "view_hr_data",
+  },
+  {
+    id: "employees",
+    label: "Dữ liệu nhân viên",
+    shortLabel: "Nhân viên",
+    icon: User,
+    permission: "view_employee",
+  },
+  {
+    id: "payrolladmin",
+    label: "Quản lý lương",
+    shortLabel: "QL lương",
+    icon: WalletCards,
+    permission: "manage_payroll",
+  },
+  {
+    id: "roles",
+    label: "Nhóm quyền",
+    shortLabel: "Nhóm quyền",
+    icon: ShieldCheck,
+    permission: "view_role",
+  },
+  {
+    id: "permissions",
+    label: "Phân quyền",
+    shortLabel: "Phân quyền",
+    icon: ShieldCheck,
+    permission: "permission_role",
+  },
+
+  {
+    id: "newsadmin",
+    label: "Quản lý Tin tức",
+    shortLabel: "Tin tức",
+    icon: Newspaper,
+    permission: "view_news",
+  },
+  {
+    id: "settings",
+    label: "Cấu hình hệ thống",
+    shortLabel: "Cấu hình",
+    icon: Settings,
+    permission: "view_setting",
+  },
+];

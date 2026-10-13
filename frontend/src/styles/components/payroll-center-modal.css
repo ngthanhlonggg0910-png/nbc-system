@@ -1,0 +1,109 @@
+/* =========================================================
+   OVERVIEW POPUPS — hộp giữa màn hình kiểu Zalo
+   Đè kiểu drawer trượt bên phải gốc
+   ========================================================= */
+
+/* Hộp tạo kỳ lương: chỉ phủ vùng nội dung, giữ thanh bên */
+.pyc-create-modal {
+  left: 274px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+@media (max-width: 1100px) {
+  .pyc-create-modal {
+    left: 235px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pyc-create-modal {
+    left: 0;
+  }
+}
+
+.app-shell.desktop-sidebar-hidden .pyc-create-modal {
+  left: 0;
+}
+
+/* Chi tiết kỳ lương: nền phủ vùng nội dung, chừa khoảng trống mọi phía */
+.pyc-overlay {
+  left: 274px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+@media (max-width: 1100px) {
+  .pyc-overlay {
+    left: 235px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pyc-overlay {
+    left: 0;
+  }
+}
+
+.app-shell.desktop-sidebar-hidden .pyc-overlay {
+  left: 0;
+}
+
+.pyc-drawer {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 10px rgb(9 40 66 / 10%),
+    0 32px 80px -16px rgb(9 40 66 / 45%);
+  animation: pyc-center-pop 0.18s ease;
+}
+
+@keyframes pyc-center-pop {
+  from {
+    transform: translateY(10px) scale(0.985);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Thân drawer cuộn riêng khi nội dung dài */
+.pyc-drawer > .pyc-drawer-body {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Hộp tạo kỳ lương không tràn vùng nội dung */
+.pyc-create-modal > div {
+  max-width: 100%;
+}
+
+/* =========================================================
+   PHIẾU LƯƠNG — thẻ nổi giữa vùng nội dung, KHÔNG nền tối
+   ========================================================= */
+
+.pyc-payslip-overlay {
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 24px; /* khớp viền 24px của cửa sổ Kỳ lương -> thẻ nằm gọn trong khung */
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.pyc-payslip {
+  width: min(680px, 100%);
+  height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 10px rgb(9 40 66 / 10%),
+    0 32px 80px -16px rgb(9 40 66 / 45%);
+}

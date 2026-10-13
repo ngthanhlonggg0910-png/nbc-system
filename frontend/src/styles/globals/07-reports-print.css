@@ -1,0 +1,149 @@
+/* Responsive and printable layout corrections */
+.attendance-shift-banner { display: flex; gap: 13px; align-items: center; margin: -5px 0 16px; padding: 13px 16px; color: #31546b; background: linear-gradient(105deg, #eaf4fd, #e8f8f3); border: 1px solid #d7e9ed; border-radius: 15px; box-shadow: 0 7px 18px rgba(27,73,101,.06); }
+.attendance-shift-banner > span { display: grid; place-items: center; flex: 0 0 auto; width: 42px; height: 42px; color: #fff; background: linear-gradient(145deg, var(--blue), var(--teal)); border-radius: 12px; }
+.attendance-shift-banner > span svg { width: 20px; }
+.attendance-shift-banner > div { display: grid; flex: 1; }
+.attendance-shift-banner small { color: var(--teal); font-size: 7px; font-weight: 800; letter-spacing: .1em; }
+.attendance-shift-banner strong { color: #1b3f61; font-size: 13px; }
+.attendance-shift-banner p { margin: 2px 0 0; color: #718696; font-size: 9px; }
+.attendance-shift-banner > i { display: flex; gap: 5px; align-items: center; padding: 6px 10px; color: var(--green-dark); background: rgba(255,255,255,.7); border-radius: 999px; font-size: 8px; font-style: normal; font-weight: 700; white-space: nowrap; }
+.attendance-shift-banner > i svg { width: 13px; }
+
+.calendar-day.ok { color: #176b3d; background: #eef9f2; }
+.calendar-day.late { color: #9b620f; background: #fff7e8; }
+.calendar-day.absent { color: #a83d49; background: #fff0f2; }
+.calendar-day.today { color: #0a4677; background: #e7f5ee; box-shadow: inset 0 0 0 2px #2ca766; }
+.calendar-day.today span { font-size: 16px; font-weight: 800; }
+.calendar-day.today small { color: #287b4c; font-size: 8px; font-weight: 700; opacity: 1; }
+.calendar-day.ok i { background: #39ad67; }.calendar-day.late i { background: #eda529; }.calendar-day.absent i { background: #dc5967; }
+.calendar-legend i.absent { background: #dc5967; }
+.calendar-day.selected { outline: 2px solid rgba(3,91,174,.35); outline-offset: -3px; }
+
+.report-actions { display: flex; gap: 8px; }
+.report-actions button { min-height: 40px; padding: 0 13px; font-size: 9px; }
+.report-actions button svg { width: 16px; }
+.report-actions .secondary-button { display: flex; gap: 7px; align-items: center; justify-content: center; color: var(--blue); background: #edf5fd; border: 1px solid #d5e6f2; border-radius: 11px; font-weight: 700; }
+.report-actions button:disabled { opacity: .65; cursor: wait; }
+.attendance-matrix-wrap { position: relative; max-width: none; }
+.attendance-matrix th:nth-child(1), .attendance-matrix td:nth-child(1) { position: sticky; left: 0; z-index: 4; width: 42px; min-width: 42px; max-width: 42px; background: #fff; }
+.attendance-matrix th:nth-child(2), .attendance-matrix td:nth-child(2) { position: sticky; left: 42px; z-index: 4; width: 82px; min-width: 82px; max-width: 82px; background: #fff; }
+.attendance-matrix th:nth-child(3), .attendance-matrix td:nth-child(3) { position: sticky; left: 124px; z-index: 4; width: 150px; min-width: 150px; max-width: 150px; background: #fff; }
+.attendance-matrix thead th:nth-child(1), .attendance-matrix thead th:nth-child(2), .attendance-matrix thead th:nth-child(3) { z-index: 6; background: #c9f3f4; }
+.attendance-matrix td:nth-child(3) { box-shadow: 5px 0 9px rgba(35,61,77,.08); }
+
+.payslip-footer-actions { display: flex; gap: 8px; }
+.payslip-footer-actions button { display: flex; gap: 7px; align-items: center; justify-content: center; min-height: 42px; padding: 0 13px; color: var(--blue); background: #fff; border: 1px solid #c9dced; border-radius: 11px; font-size: 9px; font-weight: 800; white-space: nowrap; }
+.payslip-footer-actions button:last-child { color: #fff; background: linear-gradient(110deg, var(--blue), var(--teal)); border-color: transparent; }
+.payslip-footer-actions button:disabled { opacity: .65; cursor: wait; }
+.payslip-footer-actions svg { width: 15px; }
+
+.pdf-exporting { overflow: visible !important; max-height: none !important; border-radius: 0 !important; box-shadow: none !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+.pdf-exporting .no-print { display: none !important; }
+.attendance-report.pdf-exporting { width: 1760px !important; max-width: none !important; padding: 22px !important; }
+.attendance-report.pdf-exporting .report-paper-scroll { overflow: visible !important; border: 1px solid #87929c !important; }
+.attendance-report.pdf-exporting .report-paper { width: 100% !important; min-width: 100% !important; }
+.attendance-report.pdf-exporting .attendance-matrix-wrap { overflow: visible !important; max-width: none !important; }
+.attendance-report.pdf-exporting .attendance-matrix th, .attendance-report.pdf-exporting .attendance-matrix td { position: static !important; }
+.attendance-report.pdf-exporting .attendance-matrix { width: 100% !important; font-size: 8px !important; }
+.attendance-report.pdf-exporting .attendance-matrix th, .attendance-report.pdf-exporting .attendance-matrix td { min-width: 0 !important; height: 30px !important; padding: 3px !important; }
+.payslip-sheet.pdf-exporting .payslip-hero { min-height: 238px; padding: 27px 42px; }
+.payslip-sheet.pdf-exporting .payslip-hero h1 { margin: 0; font-size: 34px; }
+.payslip-sheet.pdf-exporting .payslip-employee-card { grid-template-columns: 145px 1fr 1fr; gap: 25px; margin-top: -23px; padding: 31px 38px 25px; }
+.payslip-sheet.pdf-exporting .payslip-employee-card > .avatar { grid-column: auto; justify-self: auto; width: 118px; height: 118px; margin: 0; }
+.payslip-sheet.pdf-exporting .employee-facts { padding: 0; border-top: 0; }
+.payslip-sheet.pdf-exporting .employee-facts.right { grid-column: auto; padding-left: 25px; border-top: 0; border-left: 1px solid #dde5ea; }
+.payslip-sheet.pdf-exporting .payslip-summary-strip { grid-template-columns: repeat(3, 1fr); }
+.payslip-sheet.pdf-exporting .payslip-summary-strip > div { border-right: 1px solid #dfe7e4; border-bottom: 0; }
+.payslip-sheet.pdf-exporting .payslip-summary-strip > div:last-child { border: 0; }
+.payslip-sheet.pdf-exporting .payslip-breakdown { grid-template-columns: 1fr 1fr; }
+.payslip-sheet.pdf-exporting .payslip-breakdown > div + div { border-top: 0; border-left: 1px solid #e2e7eb; }
+.payslip-sheet.pdf-exporting .payslip-net { grid-template-columns: 47px 1fr auto; }
+.payslip-sheet.pdf-exporting .payslip-net > b { grid-column: auto; font-size: 22px; }
+.payslip-sheet.pdf-exporting .payslip-footer { align-items: center; flex-direction: row; }
+
+@media (max-width: 760px) {
+  .dashboard-page .welcome-card { display: flex; min-height: auto; padding: 24px 22px 25px; flex-direction: column; align-items: stretch; }
+  .dashboard-page .welcome-copy { display: contents; }
+  .dashboard-page .welcome-card .eyebrow { order: 1; }
+  .dashboard-page .welcome-copy h2 { z-index: 2; order: 2; max-width: 100%; padding: 0; font-size: 19px; }
+  .dashboard-page .welcome-profile { position: relative; z-index: 3; inset: auto; order: 3; align-self: center; min-width: auto; margin: 17px 0 8px; padding: 0; background: transparent; border: 0; transform: none; backdrop-filter: none; }
+  .dashboard-page .welcome-profile .avatar { width: 88px; height: 88px; }
+  .dashboard-page .welcome-copy > p { z-index: 2; order: 4; max-width: 100%; margin: 8px 0 10px; text-align: center; font-size: 12px; }
+  .dashboard-page .status-pill { z-index: 2; order: 5; align-self: center; }
+  .dashboard-page .hero-live-info { position: static; z-index: 2; order: 6; display: grid; grid-template-columns: 1fr 1fr; width: 100%; max-width: none; margin: 16px 0 0; }
+  .dashboard-page .hero-live-info .hero-clock { grid-column: 1 / -1; }
+  .dashboard-page .hero-live-info > div { min-width: 0; min-height: 57px; }
+  .dashboard-page .hero-leaf { z-index: 1; }
+
+  .attendance-shift-banner { gap: 10px; margin-top: -3px; padding: 11px 12px; }
+  .attendance-shift-banner > span { width: 38px; height: 38px; }
+  .attendance-shift-banner strong { font-size: 11px; }
+  .attendance-shift-banner p { font-size: 8px; }
+  .attendance-shift-banner > i { display: none; }
+  .report-toolbar { align-items: stretch; flex-direction: column; }
+  .report-month-picker { grid-template-columns: 18px 1fr; width: 100%; }.report-month-picker input { grid-column: 1 / -1; width: 100%; }
+  .report-actions { display: grid; grid-template-columns: 1fr 1fr; }
+  .report-actions button { width: 100%; }
+  .attendance-matrix th:nth-child(1), .attendance-matrix td:nth-child(1) { width: 34px; min-width: 34px; max-width: 34px; }
+  .attendance-matrix th:nth-child(2), .attendance-matrix td:nth-child(2) { left: 34px; width: 72px; min-width: 72px; max-width: 72px; }
+  .attendance-matrix th:nth-child(3), .attendance-matrix td:nth-child(3) { left: 106px; width: 125px; min-width: 125px; max-width: 125px; }
+  .document-workspace-tabs { width: 100%; }.document-workspace-tabs button { flex: 1; justify-content: center; padding: 0 7px; }
+  .manager-approval-list > article { grid-template-columns: 40px 1fr; padding: 14px; }.manager-approval-list .document-review-actions { grid-column: 2; flex-wrap: wrap; }.manager-approval-list .document-review-actions button { flex: 1; justify-content: center; }
+  .footer-config-grid { grid-template-columns: 1fr; }
+
+  .payslip-employee-card { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; align-items: start; padding: 28px 14px 20px; }
+  .payslip-employee-card > .avatar { grid-column: 1 / -1; justify-self: center; width: 96px; height: 96px; margin: 0 0 13px; }
+  .employee-facts { width: 100%; gap: 13px; padding: 16px 12px 0 0; border-top: 1px solid #e2e8ec; }
+  .employee-facts.right { grid-column: 2; padding: 16px 0 0 12px; border-top: 1px solid #e2e8ec; border-left: 1px solid #e2e8ec; }
+  .employee-facts > div { align-items: flex-start; }
+  .employee-facts svg { width: 18px; flex: 0 0 auto; }
+  .employee-facts small { font-size: 8px; }
+  .employee-facts strong { font-size: 10px; line-height: 1.35; white-space: normal; }
+  .payslip-footer-actions { width: 100%; }
+  .payslip-footer-actions button { flex: 1; }
+}
+
+@page payslip-page { size: A4 portrait; margin: 5mm; }
+@page attendance-page { size: A3 landscape; margin: 5mm; }
+
+@media print {
+  .payslip-sheet { page: payslip-page; width: var(--payslip-print-width, 220mm) !important; max-width: var(--payslip-print-width, 220mm) !important; overflow: hidden !important; break-inside: avoid-page !important; page-break-inside: avoid !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; zoom: var(--payslip-print-scale, .86) !important; transform-origin: top left !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .payslip-sheet > * { break-inside: avoid-page !important; page-break-inside: avoid !important; }
+  .attendance-report { page: attendance-page; width: 410mm !important; max-width: 410mm !important; padding: 0 !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .attendance-report .report-paper-scroll { overflow: visible !important; border: 1px solid #87929c !important; }
+  .attendance-report .report-paper { width: 100% !important; min-width: 100% !important; }
+  .attendance-report .attendance-matrix-wrap { overflow: visible !important; }
+  .attendance-report .attendance-matrix { width: 100% !important; font-size: 7px !important; }
+  .attendance-report .attendance-matrix th, .attendance-report .attendance-matrix td { position: static !important; min-width: 0 !important; height: 27px !important; padding: 2px !important; }
+  .payslip-sheet .payslip-hero { min-height: 158px !important; padding: 17px 28px !important; }
+  .payslip-sheet .payslip-hero > img { width: 70px !important; height: 43px !important; }
+  .payslip-sheet .payslip-hero > div:nth-of-type(2) { margin-top: -11px !important; }
+  .payslip-sheet .payslip-hero h1 { margin: 0 !important; font-size: 25px !important; }
+  .payslip-sheet .payslip-hero p { margin: 4px 0 7px !important; font-size: 11px !important; }
+  .payslip-sheet .payslip-hero > div:nth-of-type(2) > span { padding: 5px 10px !important; font-size: 9px !important; }
+  .payslip-sheet .payslip-employee-card { grid-template-columns: 102px 1fr 1fr !important; gap: 16px !important; margin-top: -17px !important; padding: 19px 25px 15px !important; border-radius: 18px 18px 0 0 !important; }
+  .payslip-sheet .payslip-employee-card > .avatar { grid-column: auto !important; justify-self: auto !important; width: 82px !important; height: 82px !important; margin: 0 !important; }
+  .payslip-sheet .employee-facts { gap: 7px !important; padding: 0 !important; border-top: 0 !important; }
+  .payslip-sheet .employee-facts > div { gap: 7px !important; }
+  .payslip-sheet .employee-facts svg { width: 16px !important; }
+  .payslip-sheet .employee-facts small { font-size: 7px !important; }
+  .payslip-sheet .employee-facts strong { font-size: 9px !important; }
+  .payslip-sheet .employee-facts.right { grid-column: auto !important; padding-left: 16px !important; border-top: 0 !important; border-left: 1px solid #dde5ea !important; }
+  .payslip-sheet .payslip-summary-strip { grid-template-columns: repeat(3, 1fr) !important; margin: 0 18px 10px !important; padding: 7px !important; border-radius: 12px !important; }
+  .payslip-sheet .payslip-summary-strip > div { border-right: 1px solid #dfe7e4 !important; border-bottom: 0 !important; }
+  .payslip-sheet .payslip-summary-strip > div { gap: 8px !important; padding: 4px 10px !important; }
+  .payslip-sheet .payslip-summary-strip > div > span { width: 34px !important; height: 34px !important; }
+  .payslip-sheet .payslip-summary-strip strong { font-size: 14px !important; }
+  .payslip-sheet .payslip-breakdown { grid-template-columns: 1fr 1fr !important; margin: 0 18px 10px !important; border-radius: 12px !important; }
+  .payslip-sheet .payslip-breakdown > div { padding: 10px 15px !important; }
+  .payslip-sheet .payslip-breakdown > div + div { border-top: 0 !important; border-left: 1px solid #e2e7eb !important; }
+  .payslip-sheet .payslip-breakdown h2 { margin-bottom: 6px !important; font-size: 10px !important; }.payslip-sheet .payslip-breakdown h2 span { width: 25px !important; height: 25px !important; }
+  .payslip-sheet .payslip-line { min-height: 19px !important; font-size: 8px !important; }
+  .payslip-sheet .payslip-breakdown footer { margin-top: 5px !important; padding: 6px 8px !important; font-size: 8px !important; }
+  .payslip-sheet .payslip-net { grid-template-columns: 36px 1fr auto !important; gap: 8px !important; margin: 0 18px 10px !important; padding: 8px 13px !important; border-radius: 11px !important; }
+  .payslip-sheet .payslip-net > span { width: 32px !important; height: 32px !important; }.payslip-sheet .payslip-net > span svg { width: 18px !important; }
+  .payslip-sheet .payslip-net > b { grid-column: auto !important; font-size: 17px !important; }
+  .payslip-sheet .payslip-footer { align-items: center !important; margin: 0 18px 12px !important; padding: 8px 12px !important; flex-direction: row !important; border-radius: 10px !important; }
+  .payslip-sheet .payslip-footer > div > svg { width: 31px !important; height: 31px !important; }
+  .payslip-sheet .payslip-footer p { margin: 2px 0 4px !important; }
+}

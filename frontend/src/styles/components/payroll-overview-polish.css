@@ -1,0 +1,205 @@
+.payroll-year-calendar {
+  --pyc-polish-blue: #0867c4;
+  --pyc-polish-teal: #079da1;
+  --pyc-polish-ink: #12375c;
+  --pyc-polish-line: #d7e6ef;
+  gap: 18px;
+}
+
+.payroll-year-calendar .pyc-controls,
+.payroll-year-calendar .pyc-summary article,
+.payroll-year-calendar .pyc-section,
+.payroll-year-calendar .pyc-annual-report {
+  border-color: var(--pyc-polish-line);
+  box-shadow: 0 14px 36px rgba(13, 67, 101, .07);
+}
+
+.payroll-year-calendar .pyc-controls {
+  padding: 17px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .96);
+}
+
+.payroll-year-calendar .pyc-controls select,
+.payroll-year-calendar .pyc-year button,
+.payroll-year-calendar .pyc-refresh {
+  height: 46px;
+  border-radius: 12px;
+  border-color: #cbdde8;
+}
+
+.payroll-year-calendar .pyc-controls label > span,
+.payroll-year-calendar .pyc-year label > span {
+  color: #118b96;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.payroll-year-calendar .pyc-mode {
+  padding: 4px;
+  border-radius: 13px;
+  background: #edf4f8;
+}
+.payroll-year-calendar .pyc-mode button { min-height: 38px; border-radius: 10px; transition: .18s ease; }
+.payroll-year-calendar .pyc-mode button.active {
+  color: #fff;
+  background: linear-gradient(115deg, var(--pyc-polish-blue), var(--pyc-polish-teal));
+  box-shadow: 0 8px 18px rgba(4, 111, 163, .2);
+}
+
+.payroll-year-calendar .pyc-summary { gap: 14px; }
+.payroll-year-calendar .pyc-summary article {
+  position: relative;
+  min-height: 136px;
+  padding: 22px;
+  overflow: hidden;
+  border-radius: 19px;
+  background: #fff;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.payroll-year-calendar .pyc-summary article::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(#0871ca, #0da89a);
+}
+.payroll-year-calendar .pyc-summary article:nth-child(2)::before { background: #159a70; }
+.payroll-year-calendar .pyc-summary article:nth-child(3)::before { background: #0876bd; }
+.payroll-year-calendar .pyc-summary article:nth-child(4)::before { background: #d48a19; }
+.payroll-year-calendar .pyc-summary article:hover { transform: translateY(-3px); border-color: #81c8ce; box-shadow: 0 18px 32px rgba(8, 83, 118, .11); }
+.payroll-year-calendar .pyc-summary article > span { color: #536b7e; font-size: 11px; font-weight: 900; letter-spacing: .05em; }
+.payroll-year-calendar .pyc-summary article > strong { margin-top: 10px; color: #0b477d; font-size: clamp(21px, 1.7vw, 30px); }
+.payroll-year-calendar .pyc-summary article > small { margin-top: auto; color: #6f8393; }
+
+.payroll-year-calendar .pyc-section,
+.payroll-year-calendar .pyc-annual-report { border-radius: 22px; background: #fff; }
+.payroll-year-calendar .pyc-section__head,
+.payroll-year-calendar .pyc-annual-report > header { padding: 24px 25px 19px; }
+.payroll-year-calendar .pyc-section__head span,
+.payroll-year-calendar .pyc-annual-report header span { color: #078f99; letter-spacing: .13em; }
+.payroll-year-calendar .pyc-section__head h2,
+.payroll-year-calendar .pyc-annual-report h2 { color: var(--pyc-polish-ink); font-size: 22px; }
+
+.payroll-year-calendar .pyc-calendar { gap: 14px; padding: 0 24px 24px; }
+.payroll-year-calendar .pyc-month {
+  min-height: 244px;
+  padding: 17px;
+  border: 1px solid #dbe7ee;
+  border-radius: 17px;
+  background: #fff;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.payroll-year-calendar .pyc-month:hover { transform: translateY(-4px); border-color: #65bec5; box-shadow: 0 16px 28px rgba(10, 84, 119, .12); }
+.payroll-year-calendar .pyc-month.is-published,
+.payroll-year-calendar .pyc-month.is-locked,
+.payroll-year-calendar .pyc-month.is-error,
+.payroll-year-calendar .pyc-month.is-adjusting { background: #fff; }
+.payroll-year-calendar .pyc-month header > span { color: #486278; font-weight: 950; letter-spacing: .1em; }
+.payroll-year-calendar .pyc-month__fund strong { color: #0b477d; font-size: 23px; }
+.payroll-year-calendar .pyc-month footer { margin: auto -17px -17px; padding: 12px 17px; border-radius: 0 0 17px 17px; background: #f4f8fa; }
+
+.payroll-year-calendar .pyc-chart { padding: 0 24px 24px; }
+.payroll-year-calendar .pyc-chart__plot {
+  position: relative;
+  height: 292px;
+  padding: 16px 14px 0;
+  border: 1px solid #dce7ed;
+  border-radius: 17px;
+  background: repeating-linear-gradient(to top, #fbfdfe 0 70px, #e7eef2 71px);
+}
+.payroll-year-calendar .pyc-chart__plot > div:not(.pyc-chart-tooltip) { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(5px, .9vw, 14px); height: 100%; align-items: end; }
+.payroll-year-calendar .pyc-chart__plot > div > button {
+  height: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-rows: 1fr 30px;
+  align-items: end;
+  justify-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.payroll-year-calendar .pyc-chart__plot > div > button > i {
+  width: min(38px, 72%);
+  min-height: 4px;
+  display: block;
+  border-radius: 8px 8px 2px 2px;
+  background: linear-gradient(180deg, #13ada5, #0767c3);
+  opacity: .72;
+  transition: opacity .18s ease, transform .18s ease, filter .18s ease;
+}
+.payroll-year-calendar .pyc-chart__plot > div > button:hover > i,
+.payroll-year-calendar .pyc-chart__plot > div > button.is-active > i,
+.payroll-year-calendar .pyc-chart__plot > div > button:focus-visible > i { opacity: 1; transform: scaleX(1.1); filter: drop-shadow(0 8px 7px rgba(4,96,150,.22)); }
+.payroll-year-calendar .pyc-chart__plot > div > button:focus-visible { outline: 2px solid #098e9c; outline-offset: -2px; border-radius: 9px; }
+.payroll-year-calendar .pyc-chart__plot > div > button small { align-self: center; color: #708698; font-weight: 900; }
+.payroll-year-calendar .pyc-chart__plot svg { inset: 18px 14px 30px; width: calc(100% - 28px); height: calc(100% - 48px); pointer-events: none; }
+.payroll-year-calendar .pyc-chart-tooltip {
+  position: absolute;
+  z-index: 4;
+  top: 18px;
+  left: 18px;
+  width: min(280px, calc(100% - 36px));
+  display: grid;
+  gap: 4px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 13px;
+  background: linear-gradient(125deg, rgba(8,83,164,.95), rgba(7,151,155,.94));
+  box-shadow: 0 12px 28px rgba(9,70,111,.2);
+  color: #fff;
+  pointer-events: none;
+}
+.payroll-year-calendar .pyc-chart-tooltip span { color: #d1fff2; font-size: 9px; font-weight: 900; letter-spacing: .12em; }
+.payroll-year-calendar .pyc-chart-tooltip strong { font-size: 18px; }
+.payroll-year-calendar .pyc-chart-tooltip small { color: rgba(255,255,255,.78); font-size: 10px; }
+
+.payroll-year-calendar .pyc-signals { gap: 16px; }
+.payroll-year-calendar .pyc-list button,
+.payroll-year-calendar .pyc-activity article { border-radius: 12px; transition: background .18s ease, transform .18s ease; }
+.payroll-year-calendar .pyc-list button:hover { transform: translateX(3px); background: #f1fafb; }
+
+.payroll-year-calendar .pyc-annual-report {
+  overflow: hidden;
+  background: #fff;
+}
+.payroll-year-calendar .pyc-annual-report > .pyc-report-metrics {
+  grid-template-columns: 1.45fr 1fr 1fr 1.15fr;
+  gap: 12px;
+  padding: 0 24px 24px;
+}
+.payroll-year-calendar .pyc-report-metrics article {
+  min-height: 124px;
+  align-content: center;
+  border: 1px solid #d8e7ed;
+  border-radius: 15px;
+  background: #f8fafc;
+}
+.payroll-year-calendar .pyc-report-metrics article.primary {
+  color: #fff;
+  border-color: #0966ad;
+  background: #0b5d9f;
+}
+.payroll-year-calendar .pyc-report-metrics article.primary span,
+.payroll-year-calendar .pyc-report-metrics article.primary small { color: rgba(255,255,255,.76); }
+.payroll-year-calendar .pyc-report-metrics article.primary strong { color: #fff; font-size: clamp(20px,1.7vw,29px); }
+.payroll-year-calendar .pyc-report-metrics article span { color: #526b7d; font-weight: 800; }
+.payroll-year-calendar .pyc-report-metrics article strong { color: #0b477d; }
+.payroll-year-calendar .pyc-report-metrics article small { color: #718596; font-size: 9px; }
+.payroll-year-calendar .pyc-report-metrics article.progress > div { height: 7px; overflow: hidden; border-radius: 9px; background: #dfe9ee; }
+.payroll-year-calendar .pyc-report-metrics article.progress > div i { display: block; height: 100%; border-radius: inherit; background: #159a70; }
+
+@media (max-width: 780px) {
+  .payroll-year-calendar .pyc-summary article { min-height: 120px; }
+  .payroll-year-calendar .pyc-chart { overflow-x: auto; }
+  .payroll-year-calendar .pyc-chart__plot { min-width: 680px; }
+  .payroll-year-calendar .pyc-annual-report > .pyc-report-metrics { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .payroll-year-calendar .pyc-annual-report > .pyc-report-metrics { grid-template-columns: 1fr; }
+}

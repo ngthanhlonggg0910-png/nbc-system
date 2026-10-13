@@ -1,0 +1,14 @@
+{
+  "name": "NBC Employee Portal",
+  "short_name": "NBC Portal",
+  "description": "Cổng thông tin nhân viên Nhabe Corporation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f8fa",
+  "theme_color": "#f5f8fa",
+  "lang": "vi",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/nbc-logo.png", "sizes": "384x201", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,754 @@
+/* Project-wide readability scale */
+:root {
+  --font-readable-caption: 14px;
+  --font-readable-body: 16px;
+  --font-readable-emphasis: 17px;
+  --font-readable-feature: 17px;
+}
+
+.access-badge,
+.account-menu>button small,
+.account-menu-head span,
+.activity-row small,
+.admin-kpi-grid small,
+.admin-list-toolbar>span,
+.admin-list-toolbar button,
+.admin-nav-start>small,
+.admin-news-buttons button,
+.admin-preview-row>button,
+.admin-preview-row p,
+.admin-preview-row small,
+.admin-tabs button i,
+.approval-empty p,
+.approval-preview>div>span,
+.approval-preview b,
+.approval-preview small,
+.article-attachments a small,
+.article-status,
+.attach-button,
+.attachment-count,
+.attachment-drafts span,
+.attachment-preview-modal>footer a,
+.attachment-preview-modal header p,
+.attendance-matrix,
+.attendance-report .attendance-matrix,
+.attendance-shift-banner>i,
+.attendance-shift-banner p,
+.attendance-shift-banner small,
+.attendance-status,
+.attendance-view-tabs button,
+.bell-count,
+.round-button>.bell-count,
+.bottom-nav button,
+.bulk-actions>span,
+.bulk-actions button,
+.bulk-actions select,
+.calendar-day.today small,
+.calendar-nav span,
+.chat-bubble .avatar-face,
+.coefficient-badge,
+.company-logo-setting button,
+.company-logo-setting p,
+.demo-accounts>span,
+.demo-accounts button,
+.demo-accounts small,
+.detail-date span:first-child,
+.device-config-modal label,
+.schedule-config-modal label,
+.device-enabled small,
+.device-grid dd,
+.device-grid dt,
+.device-grid footer button,
+.device-grid header>i,
+.device-grid header small,
+.document-approval-list small,
+.document-attachment-buttons button,
+.document-progress>span,
+.document-progress i,
+.document-review-actions button,
+.document-upload>button small,
+.document-upload>div>span,
+.document-workspace-tabs button>span,
+.edit-employee-head span,
+.editor-sidebar section>input,
+.employee-cell small,
+.employee-edit-modal label small,
+.employee-facts small,
+.employee-payroll-axis span,
+.employee-payroll-chart-title small,
+.employee-payroll-kpis small,
+.employee-payroll-kpis strong i,
+.employee-payroll-progress span,
+.employee-payroll-progress small,
+.feedback-action button,
+.feedback-content>span,
+.feedback-note,
+.feedback-person small,
+.feedback-person span,
+.footer-config-grid label small,
+.forgot-success span,
+.hero-live-info em,
+.hero-live-info small,
+.hr-data-actions>button,
+.hr-data-actions>label:not(.hr-search),
+.hr-data-actions>select,
+.hr-data-tabs button,
+.hr-data-toolbar>div:first-child>span,
+.hr-kpi-row span,
+.hr-reply span,
+.hr-search input,
+.list-card-head span:first-child,
+.list-summary,
+.login-brand>span,
+.login-caption span,
+.login-security,
+.manager-approval-section .section-heading p,
+.manager-cell small,
+.manager-cell strong,
+.manager-document-copy>small,
+.mark-all,
+.mini-panel small,
+.month-coverage,
+.news-admin-row>div:nth-child(2)>span,
+.news-admin-row p,
+.news-admin-row small,
+.news-admin-summary span,
+.news-editor-actions button,
+.news-editor-head span,
+.news-feed-copy>div i,
+.news-feed-copy>div span,
+.news-feed-copy>p,
+.news-feed-copy footer,
+.news-item>div:last-child>span,
+.news-item p,
+.news-item time,
+.no-attachment,
+.notice-copy time,
+.notification-foot,
+.notification-head span,
+.notification-permission p,
+.notification-toolbar>div button span,
+.password-rules span,
+.payroll-amount>strong small,
+.payroll-meta p,
+.payroll-meta small,
+.payroll-report-heading>small,
+.payroll-report-heading span,
+.payroll-report-note small,
+.payroll-view-switch button,
+.payslip-footer p,
+.payslip-footer small,
+.payslip-hero-actions button,
+.payslip-sheet .employee-facts small,
+.payslip-sheet .payslip-breakdown footer,
+.payslip-sheet .payslip-line,
+.payslip-summary-strip em,
+.pay-summary-grid small,
+.pay-summary-grid span,
+.permission-message,
+.permission-summary small,
+.permission-table td,
+.permission-table th,
+.priority-attachments small,
+.priority-editor-note small,
+.priority-editor-note strong,
+.priority-notice-modal footer label small,
+.priority-notice-modal header>i,
+.priority-notice-modal header p,
+.priority-notice-modal header small,
+.qr-camera-message,
+.qr-login-button small,
+.qr-login-success,
+.qr-manual>span,
+.qr-manual button,
+.quick-item>span:nth-child(2),
+.reply-context span,
+.report-company p,
+.report-month-picker>span,
+.report-signatures span,
+.report-toolbar span,
+.request-created small,
+.request-status,
+.request-tabs button span,
+.reset-request-list article>button,
+.reset-request-list small,
+.rich-toolbar small,
+.row-actions button,
+.salary-master-add button,
+.salary-master-columns,
+.salary-master-list .average-toggle,
+.salary-master-list>div>span,
+.salary-master-list code,
+.schedule-list article>button,
+.schedule-list p,
+.schedule-list small,
+.scheduler-note span,
+.sidebar-logout small,
+.stat-card>span,
+.stat-card p,
+.summary-card-gradient span,
+.system-config-card label>small,
+.timeline-item small,
+.time-log-row small,
+.upload-drop small,
+.upload-drop span {
+  font-size: var(--font-readable-caption);
+}
+
+.absence-state span,
+.absence-state strong,
+.account-menu>button>span,
+.account-menu-head strong,
+.activity-row strong,
+.admin-kpi-grid p,
+.admin-preview-row strong,
+.admin-tabs button,
+.approval-empty strong,
+.approval-preview>strong,
+.article-attachments a strong,
+.attachment-placeholder p,
+.auth-loading p,
+.avatar-error,
+.back-button,
+.back-login,
+.calendar-day,
+.calendar-legend,
+.chat-bubble small,
+.chat-bubble.hr>i,
+.checkbox-label,
+.company-logo-setting strong,
+.conversation-head>span,
+.conversation-pending,
+.dashboard-page .news-item>div:last-child>span,
+.dashboard-page .news-item time,
+.dashboard-page .salary-preview>div>span,
+.dashboard-page .salary-preview p,
+.dashboard-page .section-kicker,
+.dashboard-page .shift-time small,
+.dashboard-page .success-badge,
+.dashboard-page .time-log-row small,
+.data-status,
+.device-config-modal input,
+.device-config-modal select,
+.schedule-config-modal input,
+.schedule-config-modal select,
+.device-enabled strong,
+.device-grid header strong,
+.document-approval-list p,
+.document-approval-list strong,
+.document-upload>button strong,
+.document-workspace-tabs button,
+.edit-employee-head strong,
+.editor-main>label,
+.editor-sidebar>label,
+.editor-main input,
+.editor-main textarea,
+.editor-sidebar input,
+.editor-sidebar select,
+.editor-sidebar h3,
+.employee-admin-table .data-status,
+.employee-admin-table td,
+.employee-admin-table td>small,
+.employee-admin-table .employee-cell small,
+.employee-admin-table td>strong,
+.employee-admin-table .employee-cell strong,
+.employee-admin-table th,
+.employee-cell strong,
+.employee-facts strong,
+.employee-payroll-12 .section-heading p,
+.employee-payroll-formula,
+.empty-notifications span,
+.empty-notifications strong,
+.eyebrow,
+.feedback-content>p,
+.feedback-modal>p,
+.feedback-modal label,
+.reply-modal label,
+.employee-edit-modal label,
+.feedback-person strong,
+.field-error,
+.footer-config-grid label,
+.forgot-success strong,
+.form-alert,
+.hr-data-message,
+.hr-data-table td,
+.hr-data-table td>small,
+.hr-data-table td>strong,
+.hr-data-table th,
+.hr-empty,
+.input-wrap input,
+.login-caption strong,
+.login-form>label,
+.forgot-panel>label,
+.password-modal>label,
+.login-heading>span,
+.login-heading p,
+.forgot-panel>p,
+.login-options>button,
+.logout-modal>div button,
+.logout-modal p,
+.manager-document-copy p,
+.manager-document-copy strong,
+.master-description,
+.mini-panel p,
+.modal-description,
+.month-mark span,
+.news-admin-row>div:nth-child(2)>strong,
+.news-detail>footer,
+.news-detail-meta,
+.news-empty p,
+.news-list-toolbar>span,
+.notice-copy>span,
+.notice-copy strong,
+.notification-group-label,
+.notification-permission>button:nth-last-child(2),
+.notification-permission strong,
+.notification-search input,
+.notification-search select,
+.notification-toolbar>div button,
+.page-title p,
+.password-success p,
+.payroll-meta strong,
+.payroll-report-note strong,
+.payslip-breakdown footer,
+.payslip-footer>button,
+.payslip-footer strong,
+.payslip-footer-actions button,
+.payslip-hero>div:nth-of-type(2)>span,
+.payslip-line,
+.payslip-net>b small,
+.payslip-net>div strong,
+.payslip-net p,
+.payslip-sheet .employee-facts strong,
+.payslip-sheet .payslip-breakdown h2,
+.payslip-sheet .payslip-hero>div:nth-of-type(2)>span,
+.payslip-sheet .payslip-hero p,
+.payslip-summary-strip small,
+.payslip-title>div>span,
+.payslip-title p,
+.priority-attachments>strong,
+.priority-attachments b,
+.priority-notice-body .rich-content,
+.priority-notice-lead,
+.priority-notice-modal footer label strong,
+.profile-actions button,
+.profile-heading p,
+.profile-heading span,
+.profile-row input,
+.profile-row label,
+.profile-row strong,
+.qr-login-button strong,
+.qr-login-modal>p,
+.reply-context p,
+.reply-context strong,
+.report-actions button,
+.report-company strong,
+.report-legend,
+.report-month-picker input,
+.report-signatures strong,
+.report-toolbar .primary-button,
+.request-created span,
+.request-main p,
+.request-main small,
+.request-modal>p,
+.request-modal label,
+.request-tabs button,
+.reset-request-list p,
+.reset-request-list strong,
+.rich-editor,
+.rich-editor-wrap>span,
+.salary-master-add select,
+.salary-master-add input,
+.salary-master-list input,
+.salary-preview p,
+.salary-preview span,
+.salary-preview strong small,
+.scan-direction,
+.schedule-list strong,
+.scheduler-note strong,
+.search-box input,
+.secondary-button,
+.section-kicker,
+.select-button,
+.shift-note p,
+.shift-note strong,
+.shift-time small,
+.shift-time span,
+.sidebar-footer,
+.sidebar-logout>span,
+.sidebar-support p,
+.side-profile span,
+.side-profile small,
+.side-profile-copy strong,
+.stat-card strong small,
+.status-pill,
+.success-badge,
+.summary-card-gradient small,
+.system-config-card>label,
+.table-row,
+.table-title,
+.text-button,
+.timeline-item p,
+.time-log-row>div span,
+.updated,
+.verified,
+.verify-mode,
+.weekdays span,
+.welcome-copy>p,
+.welcome-profile span,
+.work-summary small,
+.work-summary span,
+.work-total {
+  font-size: var(--font-readable-body);
+}
+
+.attendance-shift-banner strong,
+.news-item h3,
+.news-lead {
+  font-size: var(--font-readable-emphasis);
+}
+
+.payslip-hero p {
+  font-size: var(--font-readable-feature);
+}
+
+@media (max-width: 760px) {
+  :root {
+    --font-readable-caption: 12px;
+    --font-readable-body: 13px;
+    --font-readable-emphasis: 14px;
+    --font-readable-feature: 15px;
+  }
+}
+
+/* HR document approval: component-specific styles must be loaded after the
+   global readability rules above so they are not unintentionally overridden. */
+.document-approval-card {
+  overflow: hidden;
+}
+
+.document-approval-filters {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 14px 18px;
+  overflow-x: auto;
+  background: #f8fafc;
+  border-bottom: 1px solid var(--line);
+}
+
+.document-approval-filters button {
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 0 12px;
+  color: #637588;
+  background: #fff;
+  border: 1px solid #dce5ec;
+  border-radius: 9px;
+  font-size: var(--font-readable-caption);
+  font-weight: 700;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.document-approval-filters button:hover:not(.active) {
+  color: var(--blue);
+  border-color: #afcddd;
+}
+
+.document-approval-filters button.active {
+  color: #fff;
+  background: linear-gradient(110deg, var(--blue), var(--teal));
+  border-color: transparent;
+}
+
+.document-approval-filters button span {
+  display: inline-grid;
+  place-items: center;
+  min-width: 19px;
+  height: 19px;
+  margin-left: 5px;
+  color: inherit;
+  background: rgb(255 255 255 / 20%);
+  border-radius: 999px;
+  font-size: 10px;
+}
+
+.document-approval-filters button:not(.active) span {
+  color: var(--blue);
+  background: #eaf3fd;
+}
+
+.document-search-toolbar {
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) minmax(160px, 210px) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.document-search-toolbar label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 11px;
+  color: #7b8a98;
+  background: #fff;
+  border: 1px solid #dce5ec;
+  border-radius: 9px;
+}
+
+.document-search-toolbar label:focus-within {
+  color: var(--blue);
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgb(39 119 172 / 12%);
+}
+
+.document-search-toolbar label svg,
+.document-search-toolbar button svg {
+  width: 16px;
+  flex: 0 0 auto;
+}
+
+.document-search-toolbar input,
+.document-search-toolbar select {
+  min-width: 0;
+  min-height: 38px;
+  color: #334b61;
+  background: #fff;
+  border: 1px solid #dce5ec;
+  border-radius: 9px;
+  font: inherit;
+  font-size: var(--font-readable-body);
+}
+
+.document-search-toolbar input {
+  width: 100%;
+  min-height: 30px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.document-search-toolbar select {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.document-search-toolbar button {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 11px;
+  color: var(--blue);
+  background: #edf5fd;
+  border: 1px solid #d3e7f5;
+  border-radius: 9px;
+  font-size: var(--font-readable-caption);
+  font-weight: 700;
+}
+
+.document-search-toolbar button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.document-approval-card .document-progress>.disabled {
+  color: #aeb9c2;
+}
+
+.document-approval-card .document-progress>.disabled i {
+  color: #fff;
+  background: #cbd4db;
+}
+
+.document-approval-empty {
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+
+  .document-approval-filters,
+  .document-search-toolbar {
+    padding: 12px 13px;
+  }
+
+  .document-search-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .document-search-toolbar button {
+    width: 100%;
+  }
+}
+
+.attendance-review-filters label,
+.attendance-review-filters select,
+.attendance-review-filters button,
+.attendance-review-filters input {
+  font-size: 15px;
+}
+
+.attendance-review-filters label,
+.attendance-review-filters>select,
+.attendance-review-filters button {
+  min-height: 48px;
+}
+
+.attendance-review-table-head {
+  font-size: 15px;
+}
+
+.attendance-review-table-head,
+.attendance-review-table article {
+  grid-template-columns: minmax(190px, 1.15fr) 120px minmax(240px, 1.5fr) 130px 135px;
+  min-width: 940px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.attendance-review-table article,
+.attendance-review-table time,
+.attendance-review-table article>p,
+.review-employee strong,
+.review-employee small {
+  font-size: 15px;
+}
+
+.review-employee i {
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+}
+
+.review-status,
+.attendance-review-table article>button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 15px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.review-status {
+  min-width: 114px;
+  text-align: center;
+}
+
+.attendance-review-table article>button {
+  width: 100%;
+  text-align: center;
+}
+
+.attendance-review-list>footer,
+.attendance-review-empty {
+  font-size: 14px;
+}
+
+.admin-approval-panel>button {
+  min-height: 64px;
+}
+
+.admin-approval-panel button strong,
+.admin-task-summary strong {
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.admin-approval-panel button small,
+.admin-task-summary small {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.admin-task-summary {
+  min-height: 72px;
+}
+
+.admin-task-summary b {
+  min-width: 30px;
+  height: 30px;
+  font-size: 13px;
+}
+
+.admin-approval-panel button>div {
+  height: 8px;
+}
+
+.admin-approval-panel button>svg,
+.admin-task-summary>svg {
+  width: 18px;
+  height: 18px;
+}
+
+.document-approval-list .document-approval-type,
+.document-approval-list .document-approval-reason {
+  color: #657688;
+  font-size: var(--font-readable-emphasis);
+  line-height: 1.45;
+}
+
+.document-approval-list .document-approval-type b,
+.document-approval-list .document-approval-reason b {
+  color: #435d73;
+  font-size: inherit;
+  font-weight: 800;
+}
+
+.document-approval-list .document-employee-heading strong {
+  color: #203f5b;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.admin-audit-workspace { display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:start; }
+.admin-audit-main,.admin-audit-sidebar { padding:24px; }
+.admin-audit-main>header { display:flex;justify-content:space-between;align-items:end;gap:20px;padding-bottom:20px;border-bottom:1px solid #e2e9ee; }
+.admin-audit-main h2,.admin-audit-sidebar h2 { margin:4px 0 0;color:#173f60;font-size:22px; }
+.admin-audit-main header p { margin:6px 0 0;color:#748697;font-size:14px; }
+.admin-audit-main header label { width:min(390px,45%);height:46px;display:flex;align-items:center;gap:9px;padding:0 13px;border:1px solid #dbe5eb;border-radius:10px;background:#fbfcfd; }
+.admin-audit-main header label svg { width:17px;color:#8396a5; }
+.admin-audit-main header input { width:100%;border:0;outline:0;background:transparent;font-size:14px; }
+.admin-audit-date { display:flex;justify-content:space-between;align-items:center;padding:18px 2px 10px;color:#078c91;font-size:12px;font-weight:900;letter-spacing:.08em; }
+.admin-audit-date b { min-width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#e7f4f8;color:#087bb2;font-size:12px; }
+.admin-audit-timeline { position:relative;padding-left:8px; }
+.admin-audit-timeline:before { content:"";position:absolute;left:27px;top:23px;bottom:23px;width:2px;background:#dfe8ed; }
+.admin-audit-timeline article { position:relative;display:grid;grid-template-columns:40px minmax(0,1fr) 30px;gap:14px;align-items:start;padding:16px 0;border-bottom:1px solid #e8eef2; }
+.admin-audit-timeline article>i { z-index:1;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#e8f4fb;color:#0878ba;font-style:normal; }
+.admin-audit-timeline article.is-success>i { background:#e4f5ec;color:#09875b; }
+.admin-audit-timeline article.is-rejected>i { background:#fdebed;color:#cb3d4d; }
+.admin-audit-timeline article>i svg { width:18px; }
+.admin-audit-timeline article>div>span { display:flex;align-items:center;gap:9px; }
+.admin-audit-timeline article strong { color:#294a64;font-size:15px; }
+.admin-audit-timeline article em { padding:4px 7px;border-radius:12px;background:#fff0dc;color:#b66b0e;font-size:11px;font-style:normal;font-weight:800; }
+.admin-audit-timeline article.is-success em { background:#e5f5ec;color:#087f56; }
+.admin-audit-timeline article.is-rejected em { background:#fdebed;color:#c43748; }
+.admin-audit-timeline article p { margin:6px 0;color:#5f7485;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+.admin-audit-timeline article small { color:#8a9aa7;font-size:12px; }
+.admin-audit-timeline article>button { width:30px;height:30px;display:grid;place-items:center;border:0;background:transparent;color:#8ba0af; }
+.admin-audit-timeline article>button svg { width:16px; }
+.admin-audit-sidebar>div:first-child { padding-bottom:18px;border-bottom:1px solid #e2e9ee; }
+.admin-audit-sidebar nav { display:grid;margin-top:6px; }
+.admin-audit-sidebar nav button { width:100%;display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:10px;align-items:center;min-height:64px;padding:0 8px;border:0;border-bottom:1px solid #e8eef2;background:transparent;text-align:left;color:#3c5a70; }
+.admin-audit-sidebar nav button.active { margin:5px 0;padding:0 10px;border:0;border-radius:10px;background:#eaf5fa;color:#0876ae; }
+.admin-audit-sidebar nav button>i { width:34px;height:34px;display:grid;place-items:center;border-radius:9px;background:#edf3f6;font-style:normal; }
+.admin-audit-sidebar nav button.active>i { background:#fff; }
+.admin-audit-sidebar nav svg { width:17px; }
+.admin-audit-sidebar nav span { display:grid;gap:3px;font-size:14px;font-weight:800; }
+.admin-audit-sidebar nav small { color:#8697a5;font-size:11px;font-weight:500; }
+.admin-audit-sidebar nav b { min-width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#0877b0;font-size:11px; }
+.admin-audit-note { display:flex;gap:11px;margin-top:22px;padding:15px;border-radius:11px;background:#f2f8f7;color:#087f70; }
+.admin-audit-note>svg { flex:none;width:21px; }
+.admin-audit-note span { display:grid;gap:4px; }
+.admin-audit-note strong { font-size:13px; }
+.admin-audit-note small { color:#6f8687;font-size:11px;line-height:1.45; }
+@media(max-width:1000px){.admin-audit-workspace{grid-template-columns:1fr}.admin-audit-sidebar{order:-1}.admin-audit-sidebar nav{grid-template-columns:repeat(4,1fr)}.admin-audit-sidebar nav button{grid-template-columns:34px 1fr}.admin-audit-sidebar nav button>b{display:none}.admin-audit-note{display:none}}
+@media(max-width:700px){.admin-audit-main>header{align-items:stretch;flex-direction:column}.admin-audit-main header label{width:100%}.admin-audit-sidebar nav{grid-template-columns:1fr 1fr}}

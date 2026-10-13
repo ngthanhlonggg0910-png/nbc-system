@@ -1,0 +1,49 @@
+.attendance-status.early_leave {
+  color: #996c00;
+  background: #fff4cf;
+}
+.attendance-status.late_early_leave {
+  color: #a45113;
+  background: #ffead9;
+}
+.attendance-status.missing_punch {
+  color: #9b5160;
+  background: #f8e8ed;
+}
+.attendance-status.leave {
+  color: #5553a7;
+  background: #ececfa;
+}
+.attendance-status.holiday {
+  color: #346a8e;
+  background: #e5f2f9;
+}
+.calendar-card .calendar-day.ok i { background: #20a464; }
+.calendar-card .calendar-day.late i { background: #f28c28; }
+.calendar-card .calendar-day.early_leave i { background: #d4a017; }
+.calendar-card .calendar-day.late_early_leave i { background: linear-gradient(90deg, #f28c28 50%, #d4a017 50%); }
+.calendar-card .calendar-day.missing_punch i { background: #8b5cf6; }
+.calendar-card .calendar-day.absent i { background: #df4759; }
+.calendar-card .calendar-day.no_data i { background: #b7c0c9; }
+.calendar-day.leave i {
+  background: #6d69c7;
+}
+.calendar-day.holiday i {
+  background: #4c91bd;
+}
+.calendar-card .calendar-legend i.ok { background: #20a464; }
+.calendar-card .calendar-legend i.late { background: #f28c28; }
+.calendar-card .calendar-legend i.early-leave { background: #d4a017; }
+.calendar-card .calendar-legend i.missing-punch { background: #8b5cf6; }
+.calendar-card .calendar-legend i.absent { background: #df4759; }
+.calendar-card .calendar-legend i.no-data { background: #b7c0c9; }
+.work-summary strong {
+  display: block;
+}
+.work-summary strong + small {
+  display: block;
+  margin-top: 3px;
+  color: #a15a2b;
+  font-size: 9px;
+  font-weight: 700;
+}

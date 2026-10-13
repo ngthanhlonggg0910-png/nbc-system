@@ -1,0 +1,487 @@
+/* =========================================================
+   READABILITY — tăng cỡ chữ mạnh cho trang Quản lý lương
+   Nạp sau cùng trong index.css để ghi đè các kích thước nhỏ.
+   ========================================================= */
+
+.payroll-admin-page {
+  font-size: 15px;
+}
+
+/* Tiêu đề trang */
+.payroll-admin-page > .payroll-page-title h1 {
+  font-size: 30px !important;
+}
+
+.payroll-admin-page > .payroll-page-title .payroll-page-title__description {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page .payroll-page-title__breadcrumb {
+  font-size: 13px !important;
+}
+
+/* Nút bấm */
+.payroll-admin-page button {
+  font-size: 14px !important;
+}
+
+.payroll-admin-page > .payroll-page-title .payroll-page-title__actions button {
+  height: 42px;
+  font-size: 14px !important;
+}
+
+/* Form */
+.payroll-admin-page input,
+.payroll-admin-page select,
+.payroll-admin-page textarea {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page label {
+  font-size: 14px !important;
+}
+
+/* Bảng dữ liệu */
+.payroll-admin-page table {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page th {
+  font-size: 14px !important;
+}
+
+.payroll-admin-page td {
+  font-size: 15px !important;
+}
+
+/* Điều hướng tính năng (thanh trái) */
+.payroll-admin-page > .payroll-board .payroll-board__label {
+  font-size: 15px !important;
+}
+
+/* Huy hiệu / thẻ nhỏ */
+.payroll-admin-page [class*="badge"],
+.payroll-admin-page [class*="chip"],
+.payroll-admin-page [class*="tag"] {
+  font-size: 13px !important;
+}
+
+/* =========================================================
+   PAYROLL PERIOD OPERATIONS (.ppo-*) — gốc dùng chữ 6-9px
+   ========================================================= */
+
+/* Đầu trang */
+.payroll-admin-page .ppo-page-head span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-page-head h2 {
+  font-size: 22px !important;
+}
+
+.payroll-admin-page .ppo-page-head p {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-page-head button,
+.payroll-admin-page .ppo-toolbar button,
+.payroll-admin-page .ppo-filters > button,
+.payroll-admin-page .ppo-detail-head button,
+.payroll-admin-page .ppo-readiness header button,
+.payroll-admin-page .ppo-alert-list article button,
+.payroll-admin-page .ppo-settings header button,
+.payroll-admin-page .ppo-next-action button {
+  font-size: 13px !important;
+}
+
+/* Bộ lọc */
+.payroll-admin-page .ppo-filters label > span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-filters select,
+.payroll-admin-page .ppo-filters input,
+.payroll-admin-page .ppo-search input {
+  font-size: 13px !important;
+  height: 40px !important;
+}
+
+/* Thẻ chỉ số KPI */
+.payroll-admin-page .ppo-kpis span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-kpis strong {
+  font-size: 24px !important;
+}
+
+.payroll-admin-page .ppo-kpis small {
+  font-size: 11px !important;
+}
+
+/* Danh sách kỳ lương */
+.payroll-admin-page .ppo-master h3,
+.payroll-admin-page .ppo-readiness h3,
+.payroll-admin-page .ppo-settings h3 {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page .ppo-period-item-head b {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page .ppo-period-item-head small {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-status {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-period-meta {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-period-numbers span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-period-numbers strong {
+  font-size: 14px !important;
+}
+
+.payroll-admin-page .ppo-period-numbers em,
+.payroll-admin-page .ppo-period-progress b {
+  font-size: 11px !important;
+}
+
+.payroll-admin-page .ppo-master > footer {
+  font-size: 12px !important;
+}
+
+/* Chi tiết kỳ */
+.payroll-admin-page .ppo-detail-head small {
+  font-size: 11px !important;
+}
+
+.payroll-admin-page .ppo-detail-head h3 {
+  font-size: 18px !important;
+}
+
+.payroll-admin-page .ppo-detail-head p {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-owner {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-summary span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-summary strong {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page .ppo-summary small {
+  font-size: 11px !important;
+}
+
+/* Tab trong chi tiết */
+.payroll-admin-page .ppo-tabs button {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-tabs b {
+  font-size: 10px !important;
+}
+
+.payroll-admin-page .ppo-workflow-head strong {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-stepper strong {
+  font-size: 11px !important;
+}
+
+.payroll-admin-page .ppo-stepper small {
+  font-size: 10px !important;
+}
+
+.payroll-admin-page .ppo-next-action span {
+  font-size: 11px !important;
+}
+
+.payroll-admin-page .ppo-next-action h3 {
+  font-size: 15px !important;
+}
+
+.payroll-admin-page .ppo-next-action p {
+  font-size: 12px !important;
+}
+
+/* Độ sẵn sàng / cảnh báo / lịch sử / cài đặt */
+.payroll-admin-page .ppo-readiness strong,
+.payroll-admin-page .ppo-unit-list strong,
+.payroll-admin-page .ppo-alert-list strong {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-readiness article span,
+.payroll-admin-page .ppo-unit-list article span,
+.payroll-admin-page .ppo-alert-list article span,
+.payroll-admin-page .ppo-unit-list em {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-alert-list article > em {
+  font-size: 10px !important;
+}
+
+.payroll-admin-page .ppo-alert-list article > b {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-history time,
+.payroll-admin-page .ppo-history article span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-history article strong {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-settings header span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-settings dl {
+  font-size: 13px !important;
+}
+
+/* Trạng thái rỗng / lỗi */
+.payroll-admin-page .ppo-empty strong {
+  font-size: 14px !important;
+}
+
+.payroll-admin-page .ppo-empty span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-error,
+.payroll-admin-page .ppo-form-error,
+.payroll-admin-page .ppo-copy-note {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-error button {
+  font-size: 12px !important;
+}
+
+/* Form tạo/sửa kỳ */
+.payroll-admin-page .ppo-modal header span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-form label > span,
+.payroll-admin-page .ppo-form legend,
+.payroll-admin-page .ppo-check,
+.payroll-admin-page .ppo-form fieldset label {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-form input,
+.payroll-admin-page .ppo-form select,
+.payroll-admin-page .ppo-form textarea {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-form footer button {
+  font-size: 13px !important;
+}
+
+.payroll-admin-page .ppo-lock-list span {
+  font-size: 12px !important;
+}
+
+.payroll-admin-page .ppo-lock-list strong {
+  font-size: 11px !important;
+}
+
+/* =========================================================
+   POLISH — nút tiêu đề, breadcrumb, tab giữa
+   ========================================================= */
+
+/* Hai nút "Xuất báo cáo" / "Tạo kỳ lương" */
+.payroll-admin-page .payroll-page-title__actions {
+  gap: 12px !important;
+}
+
+.payroll-admin-page .payroll-page-title__actions button {
+  height: 42px !important;
+  gap: 8px !important;
+  padding: 0 18px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px;
+  box-shadow: 0 1px 3px rgb(11 47 91 / 8%);
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    background 0.12s ease,
+    border-color 0.12s ease,
+    color 0.12s ease;
+}
+
+.payroll-admin-page .payroll-page-title__actions button svg {
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.payroll-admin-page .payroll-page-title__actions button:first-child:hover {
+  border-color: #0878c9 !important;
+  background: #f2f8fd !important;
+  color: #0878c9 !important;
+}
+
+.payroll-admin-page .payroll-page-title__actions button:last-child {
+  background: linear-gradient(135deg, #0878c9, #0aa2e0) !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 14px -4px rgb(8 120 201 / 55%) !important;
+}
+
+.payroll-admin-page .payroll-page-title__actions button:last-child:hover {
+  filter: brightness(1.06);
+}
+
+.payroll-admin-page .payroll-page-title__actions button:hover {
+  transform: translateY(-1px);
+}
+
+.payroll-admin-page .payroll-page-title__actions button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Breadcrumb dễ đọc hơn (không còn trùng tên trang vì h1 đã hiển thị) */
+.payroll-admin-page .payroll-page-title__breadcrumb {
+  margin-bottom: 6px !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+}
+
+/* Căn giữa các dãy tab con trong các mục */
+.payroll-admin-page .ppo-tabs,
+.pyc-overlay .pyc-drawer-tabs {
+  justify-content: center;
+  justify-content: safe center;
+}
+
+/* Hàng chip chú thích (legend) ở tiêu đề các khối: căn giữa thay vì lệch phải */
+.payroll-admin-page .pyc-legend,
+.payroll-admin-page .pyc-chart-legend {
+  flex: 1 1 auto;
+  min-width: 0;
+  justify-content: center !important;
+  gap: 14px;
+}
+
+.payroll-admin-page .pyc-legend span,
+.payroll-admin-page .pyc-chart-legend span {
+  white-space: nowrap;
+}
+
+/* =========================================================
+   PHÓNG TOÀN MÀN HÌNH cho các hộp thoại còn lại
+   ========================================================= */
+
+/* Modal dùng chung (PayrollModal) — nút ⛶ nổi góc phải */
+.payroll-modal-maxbtn {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  right: 54px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  color: #3d617d;
+  background: #fff;
+  border: 1px solid #d8e4ea;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.payroll-modal-maxbtn:hover {
+  color: #0878c9;
+  background: #f2f8fd;
+  border-color: #9cc9e8;
+}
+
+.payroll-modal-surface--max {
+  width: min(1500px, 97vw) !important;
+  max-width: none !important;
+  height: 94vh !important;
+  max-height: 94vh !important;
+}
+
+.payroll-modal-surface--max > .payroll-modal-header {
+  flex: 0 0 auto;
+}
+
+/* Modal tạo/sửa kỳ (ppo-modal) */
+.ppo-modal > section.ppo-modal-max {
+  width: min(1400px, 97vw);
+  max-height: 94vh;
+}
+
+/* Hộp tạo kỳ lương từ Tổng quan (pyc-create-modal) */
+.pyc-create-modal > div.pyc-create-max {
+  width: min(1300px, 97vw);
+  max-height: 94vh;
+}
+
+/* ===== Import workspace: Tải file mẫu ngang hàng nhãn "Kỳ lương cần cập nhật" ===== */
+.payroll-upload-toolbar{display:block}
+.payroll-upload-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px}
+.payroll-upload-field{display:grid;gap:6px}
+.payroll-upload-head .secondary-button.payroll-template-btn{display:inline-flex;align-items:center;gap:7px;height:32px;padding:0 13px;font-size:10.5px;font-weight:750;border-radius:8px}
+.payroll-upload-head .secondary-button.payroll-template-btn svg{width:14px;height:14px}
+@media(max-width:900px){.payroll-upload-toolbar>.payroll-upload-head .secondary-button.payroll-template-btn{width:auto}}
+
+/* ===== Login: nút "Quét mã QR nhân viên" tách rõ 2 dòng ===== */
+.qr-login-button{padding:12px 14px}
+.qr-login-button span{display:flex;flex-direction:column;gap:3px}
+.qr-login-button strong{font-size:13.5px;font-weight:800;line-height:1.25;color:#075bae}
+.qr-login-button small{margin-top:0;font-size:11px;line-height:1.3;color:#74899a}
+.qr-login-button{margin:12px 0 12px}
+
+/* ===== Chi tiết phiên nhập: card căn giữa giống phiếu lương ===== */
+.audit-drawer-backdrop{display:flex;align-items:center;justify-content:center;padding:24px;background:transparent;backdrop-filter:none;inset:0 24px 0 274px!important}
+@media(max-width:1100px){.audit-drawer-backdrop{inset:0 24px 0 235px!important}}
+@media(max-width:760px){.audit-drawer-backdrop{inset:0!important}}
+.audit-drawer,.audit-drawer-v2{position:relative;top:auto;right:auto;width:min(690px,100%);height:100%;margin:0;border:0;border-radius:14px;overflow:hidden;box-shadow:0 4px 10px rgb(9 40 66 / 10%),0 32px 80px -16px rgb(9 40 66 / 45%)}
+
+/* ===== Kiểm tra trước phát hành: card căn giữa giống phiếu lương ===== */
+.release-drawer-backdrop{display:flex;align-items:center;justify-content:center;padding:24px;background:transparent;backdrop-filter:none;inset:0 24px 0 274px!important}
+@media(max-width:1100px){.release-drawer-backdrop{inset:0 24px 0 235px!important}}
+@media(max-width:760px){.release-drawer-backdrop{inset:0!important}}
+.release-drawer,.release-drawer-v2{width:min(600px,100%);height:100%;border-radius:14px;box-shadow:0 4px 10px rgb(9 40 66 / 10%),0 32px 80px -16px rgb(9 40 66 / 45%)}
+
+/* ===== Lịch sử import: hàng bộ lọc không còn dính cục ===== */
+.audit-filters-v2{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr))!important;gap:12px!important;width:100%}
+.audit-filters-v2>label:first-child{grid-column:span 2}
+@media(max-width:760px){.audit-filters-v2>label:first-child{grid-column:auto}}
+
+/* ===== Trung tâm vận hành kỳ lương: hàng bộ lọc cân đối ===== */
+.payroll-admin-page .ppo-filters{grid-template-columns:repeat(auto-fit,minmax(155px,1fr))!important;gap:12px!important;align-items:end}
+.payroll-admin-page .ppo-filters .ppo-search{grid-column:span 2}
+@media(max-width:760px){.payroll-admin-page .ppo-filters .ppo-search{grid-column:auto}}
+
+/* ===== Tổng quan năm: cân đối chiều cao bộ chuyển chế độ với các select ===== */
+.payroll-year-calendar .pyc-controls .pyc-mode{height:46px;padding:4px}
+.payroll-year-calendar .pyc-mode button{min-height:0;height:100%;padding:0 18px;font-size:13px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.payroll-year-calendar .pyc-mode svg{width:15px;height:15px}

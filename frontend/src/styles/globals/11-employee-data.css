@@ -1,0 +1,207 @@
+.hr-data-page {
+  max-width: 1520px;
+}
+.hr-data-page .hr-data-toolbar {
+  margin: 20px;
+  padding: 15px !important;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #e2eaf0;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(22, 67, 96, 0.06);
+}
+.hr-data-subtabs {
+  display: flex;
+  gap: 7px;
+  width: 100%;
+  overflow-x: auto;
+}
+.hr-data-subtabs button {
+  flex: 1 0 auto;
+  min-height: 42px;
+  padding: 0 15px;
+  color: #667b8f;
+  background: transparent;
+  border: 0;
+  border-radius: 11px;
+  font: 800 13px inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.hr-data-subtabs button.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  box-shadow: 0 6px 15px rgba(4, 103, 148, 0.18);
+}
+.hr-data-section {
+  overflow: hidden;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e2eaf0;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(22, 67, 96, 0.07);
+}
+.hr-data-section .section-heading {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-bottom: 1px solid #e8edf1;
+}
+.hr-data-section .section-heading h2 {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 18px;
+}
+.hr-data-section .section-heading p {
+  margin: 0;
+  color: #77899a;
+  font-size: 13px;
+}
+.data-actions {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.data-actions input,
+.data-actions select,
+.data-actions button {
+  min-height: 38px;
+  padding: 0 12px;
+  color: #345e7e;
+  background: #f3f7fa;
+  border: 1px solid #dce6ed;
+  border-radius: 9px;
+  font: 700 12px inherit;
+}
+.data-actions button {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+.data-actions button svg {
+  width: 17px;
+}
+.data-actions .primary-button {
+  color: #fff;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  border: 0;
+}
+.attendance-grid-summary,
+.raw-logs-list,
+.schedules-list,
+.payroll-table-wrap,
+.employee-list-wrap {
+  width: 100%;
+  overflow-x: auto;
+  padding: 14px 22px 22px;
+  box-sizing: border-box;
+}
+.hr-data-section table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.hr-data-section th {
+  padding: 12px 11px;
+  color: #61778b;
+  background: #f3f7f9;
+  border-block: 1px solid #e1e8ed;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: left;
+  white-space: nowrap;
+}
+.hr-data-section th:first-child {
+  border-left: 1px solid #e1e8ed;
+  border-radius: 10px 0 0 10px;
+}
+.hr-data-section th:last-child {
+  border-right: 1px solid #e1e8ed;
+  border-radius: 0 10px 10px 0;
+}
+.hr-data-section td {
+  padding: 13px 11px;
+  color: #53677a;
+  border-bottom: 1px solid #edf1f4;
+  font-size: 13px;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+.hr-data-section td.total,
+.hr-data-section td.net {
+  color: #07875a;
+  font-weight: 800;
+}
+.device-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 18px 22px 22px;
+}
+.device-card {
+  padding: 17px;
+  background: #f8fbfc;
+  border: 1px solid #e0e9ee;
+  border-radius: 14px;
+}
+.device-card-actions {
+  display: flex;
+  gap: 7px;
+  margin-top: 12px;
+}
+.status-tag,
+.schedule-status,
+.payroll-status,
+.emp-status,
+.log-status {
+  display: inline-flex;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.status-tag.online,
+.schedule-status.enabled,
+.payroll-status.released,
+.emp-status.active,
+.log-status.processed {
+  color: #08754c;
+  background: #e5f6ec;
+}
+.status-tag.offline,
+.schedule-status.disabled,
+.payroll-status.draft,
+.emp-status.locked,
+.log-status.pending {
+  color: #b86a10;
+  background: #fff1dc;
+}
+@media (max-width: 900px) {
+  .hr-data-page .hr-data-toolbar,
+  .hr-data-section .section-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .hr-data-subtabs button {
+    flex: 0 0 auto;
+  }
+  .data-actions {
+    justify-content: flex-start;
+  }
+  .device-cards {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+  .attendance-grid-summary,
+  .raw-logs-list,
+  .schedules-list,
+  .payroll-table-wrap,
+  .employee-list-wrap {
+    padding: 10px 14px 16px;
+  }
+}

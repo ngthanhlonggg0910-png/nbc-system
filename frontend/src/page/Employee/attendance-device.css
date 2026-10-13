@@ -1,0 +1,51 @@
+.hr-data-page .reply-modal select {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  color: #263b51;
+  background: #fbfcfd;
+  border: 1px solid #dce5eb;
+  border-radius: 11px;
+  outline: 0;
+  font: inherit;
+  font-size: 12px;
+}
+
+.hr-data-page .reply-modal input[aria-invalid="true"],
+.hr-data-page .reply-modal select[aria-invalid="true"] {
+  border-color: var(--danger);
+  background: #fff8f8;
+}
+
+.hr-data-page .reply-modal input[aria-invalid="true"]:focus,
+.hr-data-page .reply-modal select[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px rgba(190, 55, 69, 0.1);
+}
+
+.device-field-error {
+  color: var(--danger);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.device-submit-error {
+  grid-column: 1 / -1;
+  margin-top: 14px;
+  padding: 10px 12px;
+  color: var(--danger);
+  background: #fff2f3;
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hr-data-page .reply-modal .device-location-field,
+.hr-data-page .reply-modal > .primary-button {
+  grid-column: 1 / -1;
+}
+
+.hr-data-page .reply-modal button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}

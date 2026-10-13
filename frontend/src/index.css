@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@import "./styles/globals/01-foundation-shell.css";
+@import "./styles/globals/02-feature-base.css";
+@import "./styles/globals/03-responsive-base.css";
+@import "./styles/globals/04-business-workflows.css";
+@import "./styles/globals/05-print-accessibility.css";
+@import "./styles/globals/06-notifications-news.css";
+@import "./styles/globals/07-reports-print.css";
+@import "./styles/globals/08-auth-hr-payroll.css";
+@import "./styles/globals/09-readability.css";
+@import "./styles/globals/10-attendance-report.css";
+@import "./styles/globals/11-employee-data.css";
+@import "./styles/globals/12-payroll-api.css";
+@import "./styles/components/payroll-center-modal.css";
+@import "./styles/components/payroll-admin-readable.css";

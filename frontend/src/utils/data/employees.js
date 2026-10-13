@@ -1,0 +1,14 @@
+﻿export const userProfiles = {
+    NBC012345: { name: "Nguyễn Văn An", staffId: "NBC012345", email: "nguyenvanan@nbc.com.vn", department: "Phòng Sản xuất", position: "Nhân viên Sản xuất · Line 2", workplace: "Nhà máy NBC - KCN VSIP II" },
+    NBC012351: { name: "Lê Thị Mai", staffId: "NBC012351", email: "lethimai@nbc.com.vn", department: "Phòng Kế toán", position: "Nhân viên Kế toán", workplace: "Văn phòng NBC" },
+    NBC012328: { name: "Trần Quốc Bình", staffId: "NBC012328", email: "tranquocbinh@nbc.com.vn", department: "Phòng Kỹ thuật", position: "Kỹ thuật viên", workplace: "Nhà máy NBC - KCN VSIP II" },
+    HR0001: { name: "Trần Minh Hương", staffId: "HR0001", email: "huong.tran@nbc.com.vn", department: "Phòng Nhân sự", position: "Quản trị viên Nhân sự", workplace: "Văn phòng NBC" },
+};
+export const initialEmployees = [
+    { id: 1, name: "Nguyễn Văn An", staffId: "NBC012345", email: "nguyenvanan@nbc.com.vn", phone: "0987 654 321", birthDate: "12/05/1992", gender: "Nam", department: "Phòng Sản xuất", position: "Nhân viên Sản xuất · Line 2", workplace: "Nhà máy NBC - KCN VSIP II", startDate: "15/08/2020", access: "Nhân viên", status: "Đang hoạt động", managerId: "HR0001" },
+    { id: 2, name: "Lê Thị Mai", staffId: "NBC012351", email: "lethimai@nbc.com.vn", phone: "0918 220 351", birthDate: "08/11/1994", gender: "Nữ", department: "Phòng Kế toán", position: "Nhân viên Kế toán", workplace: "Văn phòng NBC", startDate: "03/02/2021", access: "Nhân viên", status: "Đang hoạt động", managerId: "HR0001" },
+    { id: 3, name: "Trần Quốc Bình", staffId: "NBC012328", email: "tranquocbinh@nbc.com.vn", phone: "0903 410 328", birthDate: "20/09/1990", gender: "Nam", department: "Phòng Kỹ thuật", position: "Kỹ thuật viên", workplace: "Nhà máy NBC - KCN VSIP II", startDate: "18/06/2019", access: "Nhân viên", status: "Đang hoạt động", managerId: "HR0001" },
+    { id: 4, name: "Phạm Thanh Hà", staffId: "NBC012302", email: "ha.pham@nbc.com.vn", phone: "0938 510 302", birthDate: "06/03/1991", gender: "Nữ", department: "Phòng Nhân sự", position: "Chuyên viên Nhân sự", workplace: "Văn phòng NBC", startDate: "10/01/2018", access: "HR", status: "Đang hoạt động", managerId: "HR0001" },
+    { id: 5, name: "Trần Minh Hương", staffId: "HR0001", email: "huong.tran@nbc.com.vn", phone: "0908 001 001", birthDate: "14/02/1987", gender: "Nữ", department: "Phòng Nhân sự", position: "Quản trị viên Nhân sự", workplace: "Văn phòng NBC", startDate: "05/05/2016", access: "Quản trị viên", status: "Đang hoạt động", managerId: "" },
+    { id: 6, name: "Vũ Hoàng Nam", staffId: "NBC012398", email: "nam.vu@nbc.com.vn", phone: "0975 630 398", birthDate: "26/12/1993", gender: "Nam", department: "Phòng Kho vận", position: "Nhân viên Kho vận", workplace: "Kho trung tâm NBC", startDate: "09/09/2022", access: "Nhân viên", status: "Tạm khóa", managerId: "HR0001" },
+];
